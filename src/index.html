@@ -14,6 +14,10 @@
     <link rel="preload" as="image" href="#">
     <link rel="preload" as="image" href="../src/img/hero-shape-1.png">
     <link rel="preload" as="image" href="../src/img/hero-shape-2.png">  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body id="top">
@@ -230,7 +234,10 @@
                                             <p class="list-title">Me podés encontrar acá:</p>
                                             <div class="social-list">
 
-                                                <a href="#" class="social-link h6" title="Facebook">Fb.</a>
+                                                <a href="https://www.linkedin.com/in/paula-armengol/" class="social-link h6" title="Linkedin">
+                                                    <!--<ion-icon name="logo-linkedin"></ion-icon>-->
+                                                    <img src="../src/img/linkedin.svg">
+                                                </a>
                                                 <a href="#" class="social-link h6" title="Behance">Be.</a>
                                                 <a href="#" class="social-link h6" title="Linkedin">Ln.</a>
                                                 <a href="#" class="social-link h6" title="Dribbble">Dr.</a>
@@ -698,82 +705,63 @@
                 <section class="section contact" aria-label="contact me" id="contact">
                     <div class="container">
 
-                        <h2 class="title h2 section-title">Get In Touch</h2>
-
+                        <h2 class="title h2 section-title">Contact Me! </h2>
+                        <!-----------------------Contact Form ---------------------->
                         <div class="contact-content">
 
                             <form action="./index.html" method="post" class="contact-form">
 
-                                <input type="text" name="name" placeholder="Full name" autocomplete="off" required class="input-field">
+                                <input type="text" name="name" placeholder="Nombre" autocomplete="off" required class="input-field">
 
-                                <input type="email" name="email_address" placeholder="Email address" autocomplete="off" required
+                                <input type="email" name="email_address" placeholder="Email" autocomplete="off" required
                                     class="input-field">
 
-                                <input type="tel" name="phone" placeholder="Phone" autocomplete="off" class="input-field">
+                                <input type="tel" name="phone" placeholder="Teléfono" autocomplete="off" class="input-field">
 
-                                <textarea name="message" placeholder="Enter massges" required class="input-field"></textarea>
+                                <textarea name="message" placeholder="Deja acá tu mensaje..." required class="input-field"></textarea>
 
                                 <button type="submit" class="btn btn:hover">
-                                    <span class="span">Get A Quote</span>
+                                    <span class="span">Enviar </span>
 
                                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                 </button>
 
                             </form>
 
-                            <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d898.4329239267093!2d-73.91493787358391!3d40.76299026683699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1671529019371!5m2!1sen!2sbd"
-                            width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                            <!---------google maps--------->
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13138.748875260499!2d-58.425354953355594!3d-34.58678008005905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1682900045810!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
 
                             <ul class="contact-list">
 
                                 <li class="contact-item">
-
-                                    <div class="item-icon">
-                                    <img src="./assets/images/contact-icon-1.png" width="50" height="50" loading="lazy"
-                                        alt="contact icon">
-                                    </div>
-
                                     <div>
-                                    <span class="title h6">869. 368. 456. 56</span>
-
-                                    <span class="title h6">789 (569) 126 35</span>
+                                        <img src="./img/whatsapp (8).png" alt="whatsapp" id="whatsapp">  
+                                        <span class="title h6">+54 9 1135941434</span>      
                                     </div>
-
                                 </li>
 
                                 <li class="contact-item">
-
-                                    <div class="item-icon">
-                                    <img src="./assets/images/contact-icon-2.png" width="50" height="50" loading="lazy"
-                                        alt="contact icon">
+                                    <div>        
+                                        <a href="https://www.linkedin.com/in/paula-armengol/" target="_blank"><img src="./img/linkedin.png" alt="linkedin" id="linkedin"></a>
+                                    <span class="title h6">/in/paula-armengol/</span>   
+                                    
                                     </div>
-
-                                    <div>
-                                    <address class="title h6">
-                                        30- 24 Newtown Rd, Queens,
-                                        NY 11103, USA
-                                    </address>
-                                    </div>
-
                                 </li>
 
                                 <li class="contact-item">
-
-                                    <div class="item-icon">
-                                    <img src="./assets/images/contact-icon-3.png" width="50" height="50" loading="lazy"
-                                        alt="contact icon">
-                                    </div>
-
                                     <div>
-                                    <span class="title h6">info@drew.com</span>
-
-                                    <span class="title h6">jobs@drew.com</span>
+                                        <img src="./img/gmail (2).png" alt="Gmail" id="gmail">
+                                        <span class="title h6">p.armengol6@gmail.com</span>
                                     </div>
-
                                 </li>
 
+                                <li class="contact-item">
+                                    <div>
+                                        <img src="./img/github (1).png" alt="GitHub" id="github">
+                                        <span class="title h6">/PauArmengol</span>
+                                    </div>
+                                </li>
                             </ul>
 
                         </div>
@@ -788,10 +776,10 @@
 
     <footer class="footer">
         <div class="container">
-            <p class="copyright"> Developed with ♥ by Paula Armengol - All Rigths reserved   - 2023</p>
+            <p class="copyright"> Developed with <img src="../src/img/purple_hearts/favicon-16x16.png"> by Paula Armengol - All Rigths Reserved &copy; - 2023</p>
             <a href="#top" class="back-top-btn">
-                <span class="span">Back To Top</span>
-                <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+                <span class="span"><ion-icon name="arrow-up"></ion-icon></span>
+                <!--<ion-icon name="arrow-up" aria-hidden="true"></ion-icon>-->
             </a>
         </div>
     </footer>
