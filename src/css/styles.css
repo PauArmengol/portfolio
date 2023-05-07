@@ -648,16 +648,21 @@
   .about-item .span { 
     line-height: 1.4; 
   }
-  
-  .social-list {
+
+  .section-text .soft-skills {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    font-family: "Satoshi", sans-serif !important;
+    font-size: 3rem !important;
+
+  }
+ .soft-skill {
+    font-family: "Satoshi", sans-serif !important;
+    font-size: 1.9rem !important;
+    list-style: none;
+
+
   }
   
-  .social-link { 
-    color:var(--bg-white); 
-  }
   
   .skill-wrapper {
     display: flex;
