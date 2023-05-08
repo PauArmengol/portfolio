@@ -2,21 +2,21 @@
 
 :root {
 
-     --bg-white: #FDFDFD; 
+    --bg-white: #FDFDFD; 
     --bg-light-gray: hsla(240, 1%, 83%, 1);
     --bg-jet: hsla(0, 0%, 18%, 1);
     --bg-eerie-black: hsla(0, 0%, 13%, 1);
     --bg-rich-black-fogra-29: hsla(229, 23%, 9%, 1);
     --bg-smoky-black: hsla(0, 0%, 6%, 1);
-    /* --bg-black: #06070E;   */
+    --bg-black: #06070E;   
     --gradient-1: linear-gradient(to top, var(--bg-black) 0%, transparent 40%);
     --gradient-2: radial-gradient(circle at 75% 100%, hsla(79, 100%, 70%, 0.3) 0%, transparent 100%);
-    /* --text-white:##FDFDFD; */
+    --text-white:##FDFDFD; 
     --text-light-gray: hsla(240, 1%, 83%, 1);
     --text-rich-black-fogra-29: hsla(216, 42%, 12%, 1);
     --text-smoky-black: hsla(0, 0%, 6%, 1);
     --text-black: hsla(0, 0%, 0%, 1);
-    /* --border-white: ##FDFDFD; */
+    --border-white: ##FDFDFD; 
     --border-light-gray: hsla(240, 1%, 83%, 1);
     --border-gainsboro: hsla(220, 13%, 91%, 1);
     --border-eerie-black: hsla(0, 0%, 13%, 1);
@@ -224,7 +224,9 @@
   
   .h2, .h3, .h4, .h5 { 
     font-family: "Satoshi", sans-serif !important;
-    line-height: 1.3; }
+    line-height: 1.3; 
+    text-align: center;
+  }
   
   .h2 { font-size: var(--fontSize-3); }
   
