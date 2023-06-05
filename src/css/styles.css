@@ -843,7 +843,7 @@
   .slider-list {
     display: flex;
     align-items: flex-start;
-    gap: 30px;
+    gap: 20px;
     overflow: auto;
     scroll-snap-type: inline mandatory;
     padding-block-end: 5px;
