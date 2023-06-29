@@ -236,7 +236,9 @@
   
   .h5 { font-size: var(--fontSize-7); }
   
-  .h6 { font-size: var(--fontSize-6); }
+  .h6 { 
+    color: white;
+    font-size: var(--fontSize-6); }
 
   
   .btn {
@@ -551,11 +553,12 @@
 
   .service-item { 
     border-block-end: 1px solid var(--border-eerie-black); 
+
   }
   
   .service-card {
     position: relative;
-    padding-block: 45px; 
+    padding-block: 25px; 
   }
   
   .service-card .card-icon {
@@ -563,6 +566,13 @@
     margin-inline: auto;
     transition: var(--transition-1);
   } 
+
+  .card-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
   
   .service-card .card-title {
     font-family: "Satoshi", sans-serif !important;
@@ -638,7 +648,10 @@
   }
 
   #texto-saludo {
-    display: inline-block;
+    /* display: inline-block; */
+    text-align: center;
+    font-size: 2.5rem;
+    color:#832161;
   }
 
   #saludo {
@@ -650,23 +663,37 @@
     line-height: 1.4; 
   }
 
-  .section-text .soft-skills {
-    display: flex;
-    font-family: "Satoshi", sans-serif !important;
-    font-size: 3rem !important;
-
-  }
- .soft-skill {
+  .soft-skills-container {
     display: flex;
     flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .soft-skills {
+    font-family: "Satoshi", sans-serif !important;
+    font-size: 3rem !important;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+ .soft-skill {
+    display: flex;
     align-items: center;
     font-family: "Satoshi", sans-serif !important;
     font-size: 1.9rem !important;
     list-style: none;
+    margin: 20px;
   }
 
   .soft-skill ion-icon {
-    margin: 10px;
+    margin-right: 5px;
   }
   
   .skill-wrapper {
