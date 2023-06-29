@@ -1,4 +1,7 @@
 @import url('/src/fonts/satoshi.css');
+@import url('./smartphone.css');
+@import url('./tablet.css');
+/* @import url('./desktop.css'); */
 
 :root {
 
@@ -651,7 +654,7 @@
     /* display: inline-block; */
     text-align: center;
     font-size: 2.5rem;
-    color:#832161;
+    color:#D18FDF;
   }
 
   #saludo {
@@ -849,8 +852,7 @@
   
   .project-card .card-subtitle {
     font-family: Satoshi, sans-serif;
-    font-size: var(--fontSize-10);
-    /* text-transform: uppercase; */
+    font-size: 1em;
     letter-spacing: 2px;
     margin-block-end: 10px;
     text-align: center;
@@ -997,16 +999,14 @@
     padding: 32px 16px;
     border-inline: 1px solid var(--border-eerie-black);
   }
- 
-  
-  /*------------------- CUSTOM CURSOR --------------------*/
   
   .cursor-dot, .cursor-outline { 
     display: none; 
   }
-  
-  /*---------------------------------------------------------------------------------*/
-  /*-----------------------------------MEDIA QUERIES --------------------------------*/
+
+
+  /* --------------   media queries  -------------- */
+
   @media (max-width: 574px) {
 
     .container {
@@ -1204,10 +1204,6 @@
     .tab-btn-item:not(:first-child) {
       border-inline-start: 1px solid var(--border-eerie-black);
     }
-  
-    /* :is([data-tab-content="interview"], [data-tab-content="exhibition"]) .grid-list {
-      grid-template-columns: 1fr 1fr;
-    } */
 
     .cta { 
       padding-block: 40px; 
@@ -1338,15 +1334,6 @@
       border-block-end: none;
     }
   
-   /*  .tab-content .grid-list { 
-      grid-template-columns: 1fr 1fr; 
-    } */
-  
-   /*  :is([data-tab-content="interview"], [data-tab-content="exhibition"], [data-tab-content="awward"]) .grid-list {
-      grid-template-columns: repeat(3, 1fr);
-    }  
-   */
-  
     .cta .container {
       display: flex;
       align-items: center;
@@ -1378,17 +1365,7 @@
       margin-left: 30px;
       
     }
-  
-  /*
-    .back-top-btn .span { 
-      display: block; 
-    }*/ /* lo sqaque yo */
-  
-    /* .back-top-btn {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    } */
+
   
   }
   
@@ -1470,3 +1447,6 @@
     }
   
   }
+
+
+  
