@@ -848,10 +848,12 @@
   }
   
   .project-card .card-subtitle {
+    font-family: Satoshi, sans-serif;
     font-size: var(--fontSize-10);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 2px;
     margin-block-end: 10px;
+    text-align: center;
   }
   
   .project-card .card-title {
