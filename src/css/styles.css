@@ -5,11 +5,12 @@
 
     --bg-white: #FAFFF4; 
     --bg-orange: #FCAB10;
-    --bg-black: #090C08;   
+    --bg-black: #090C08;
+    --bg-black-2: #030301;   
     --text-white:#FAFFF4; 
     --text-black: #090C08;
     --border-white: #FAFFF4; 
-    
+
 
     --bg-light-gray: hsla(240, 1%, 83%, 1);
     --bg-jet: hsla(0, 0%, 18%, 1);
@@ -247,12 +248,14 @@
   
   .h3 { font-size: var(--fontSize-4); }
   
-  .h4 { font-size: var(--fontSize-5); }
+  .h4 { 
+    font-size: 3rem; 
+  }
   
   .h5 { font-size: var(--fontSize-7); }
   
   .h6 { 
-    color: #090C08;
+    /* color: #090C08; */
     font-size: var(--fontSize-6); }
 
   
@@ -649,11 +652,11 @@
   }
   
   .tab-content .grid-list {
-    gap: 30px;
+    gap: 20px;
   }
   
   .tab-content .section-title { 
-    margin-block-end: 30px; 
+    margin-block-end: 10px; 
   }
   
   .tab-content .section-text,
@@ -670,7 +673,7 @@
     /* display: inline-block; */
     text-align: center;
     font-size: 2.5rem;
-    color:#D18FDF;
+    color:#030301;
   }
 
   #saludo {
@@ -708,7 +711,7 @@
 /*     font-family: "Satoshi", sans-serif !important;
  */    font-size: 1.9rem !important;
     list-style: none;
-    margin: 20px;
+    margin: 10px;
   }
 
   .soft-skill ion-icon {
@@ -750,7 +753,7 @@
   }
   
   ul#skillsMain li div {
-    flex-basis: calc(100% / 6);
+    flex-basis: calc(100% / 10);
     box-sizing: border-box;
     padding: 10px;
   }
@@ -767,13 +770,14 @@
   }
 
   .tooltip .tooltiptext {
-/*     font-family: "Satoshi", "sans-serif" !important; */ visibility: hidden;
-    width: 100px;
-    background-color: #832161;
-    color: #0C0F0A;
+/*     font-family: "Satoshi", "sans-serif" !important; */ 
+    font-weight: 700;
+    visibility: hidden;
+    background-color: #FAFFF4;
+    color: #030301;
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
+    border-radius: 3px;
+   /*  padding: 5px 0; */
     position: absolute;
     z-index: 1;
     top: 100%;
@@ -977,7 +981,7 @@
     margin-right: 30px;
   }
   .contact-item .title { 
-    color: var(--text-light-gray); 
+    color: #030301; 
   }
 
  
