@@ -1,22 +1,26 @@
-@import url('/src/fonts/satoshi.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 
 :root {
 
-    --bg-white: #FDFDFD; 
+    --bg-white: #FAFFF4; 
+    --bg-orange: #FCAB10;
+    --bg-black: #090C08;   
+    --text-white:#FAFFF4; 
+    --text-black: #090C08;
+    --border-white: #FAFFF4; 
+    
+
     --bg-light-gray: hsla(240, 1%, 83%, 1);
     --bg-jet: hsla(0, 0%, 18%, 1);
     --bg-eerie-black: hsla(0, 0%, 13%, 1);
     --bg-rich-black-fogra-29: hsla(229, 23%, 9%, 1);
     --bg-smoky-black: hsla(0, 0%, 6%, 1);
-    --bg-black: #06070E;   
     --gradient-1: linear-gradient(to top, var(--bg-black) 0%, transparent 40%);
     --gradient-2: radial-gradient(circle at 75% 100%, hsla(79, 100%, 70%, 0.3) 0%, transparent 100%);
-    --text-white:##FDFDFD; 
     --text-light-gray: hsla(240, 1%, 83%, 1);
     --text-rich-black-fogra-29: hsla(216, 42%, 12%, 1);
     --text-smoky-black: hsla(0, 0%, 6%, 1);
-    --text-black: hsla(0, 0%, 0%, 1);
-    --border-white: ##FDFDFD; 
     --border-light-gray: hsla(240, 1%, 83%, 1);
     --border-gainsboro: hsla(220, 13%, 91%, 1);
     --border-eerie-black: hsla(0, 0%, 13%, 1);
@@ -80,8 +84,8 @@
   .logo_PA {
     width: 40%;
     height: 40%;
-    border: 5px solid var(--bg-white);
-    border-radius: 10px;
+    border: 3px solid var(--bg-white);
+    border-radius: 5px;
   } 
   
   input, button, textarea {
@@ -101,12 +105,17 @@
   html {
     font-size: 10px;
     scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
   }
   
   body {
-    background-color: var(--bg-black) ;
-    color: var(--bg-white);
-    font-family: "Satoshi", "sans-serif" !important;
+    /* background: linear-gradient(to right, #d466ff, #7b6fff); */
+    /* background: linear-gradient(to right, #d466ff, #af58ff); */
+    /* background: linear-gradient(to right, #e48adc, #af58ff); */
+    /* background: linear-gradient(to right, #e48adc, #af58ff); */ 
+    background: linear-gradient(90deg, rgba(250,161,242,1) 0%, rgba(160,57,255,1) 100%);
+    color: #090C08;
+    font-family: Lato, sans-serif;
     font-size: var(--fontSize-8);  
     overflow: hidden;
   }
@@ -202,7 +211,8 @@
 
   .title1 {
     color: #D18FDF;
-    font-family: "Satoshi", sans-serif !important;
+    /* font-family: "Satoshi", sans-serif !important; */
+    font-family: 'Lato', sans-serif !important;
     font-weight: bold !important;
     font-size: 6rem ;
     margin-top: 1rem;
@@ -210,20 +220,25 @@
   }
   
   .title {
-    color: #D18FDF;
-    font-family: "Satoshi", sans-serif !important;
+    /* color: #D18FDF; */
+    color: #FCAB10;
+    /* font-family: "Satoshi", sans-serif !important; */
+    font-family: 'Lato', sans-serif !important;
     font-weight: var(--weight-regular);
     font-size: var(--fontSize-2); 
+    text-shadow: 1px 2px 4px #0C0F0A;
   }
   
   .h1 {
-    font-family: "Satoshi", sans-serif !important;
+    /* font-family: "Satoshi", sans-serif !important; */
+    font-family: 'Lato', sans-serif;
     font-size: var(--fontSize-2);
     line-height: 1.2;
   }
   
   .h2, .h3, .h4, .h5 { 
-    font-family: "Satoshi", sans-serif !important;
+    /* font-family: "Satoshi", sans-serif !important; */
+    font-family: 'Lato', sans-serif;
     line-height: 1.3; 
     text-align: center;
   }
@@ -237,12 +252,12 @@
   .h5 { font-size: var(--fontSize-7); }
   
   .h6 { 
-    color: white;
+    color: #090C08;
     font-size: var(--fontSize-6); }
 
   
   .btn {
-    font-family: "Satoshi", sans-serif !important;
+    /* font-family: "Satoshi", sans-serif !important; */
     color: var(--bg-white);
     font-size: var(--fontSize-9);
     font-weight: var(--weight-medium);
@@ -335,7 +350,7 @@
   
   .header.active {
     position: fixed;
-    background-color: var(--bg-jet); 
+    background-color: #FCAB10; 
     padding-block: 10px;
     animation: slideIn 500ms ease-out forwards;
   }
@@ -364,12 +379,13 @@
     display: grid;
     place-content: center;
     gap: 6px;
+    background-color: #E2A0FF;
   }
   
   .nav-open-btn .line {
     width: 24px;
     height: 2px;
-    background-color: #06070E;
+    background-color: #E2A0FF;
     transition: var(--transition-1);
   }
   
@@ -386,12 +402,12 @@
   }
   
   .nav-open-btn::after { 
-    background-color: #06070E; 
+    background-color: #0C0F0A; 
   }
   
   .navbar {
     position: fixed;
-    background-color: #06070E;
+    background-color: #0C0F0A;
     top: 0;
     left: -300px;
     width: 100%;
@@ -434,10 +450,11 @@
 
 
   .navbar-link {
-    font-family: "Satoshi", sans-serif !important;
+    font-family: "Lato", sans-serif !important; 
     color:var(--bg-white);
     padding: 8px;
     margin-block-start: 4px;
+    text-shadow: 1px 1px 2px #04080f;
   }
   
   .navbar-link:is(:hover, :focus-visible) { 
@@ -450,7 +467,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: #06070E;
+    background-color: #0C0F0A;
     opacity: 0;
     pointer-events: none;
     z-index: 2;
@@ -488,14 +505,14 @@
     margin-inline: auto;
   }
   
-  .banner-outline::after {
+ /*  .banner-outline::after {
     top: 20px;
     right: 0;
     width: 100%;
     height: 100%;
     outline: 1px solid var(--border-eerie-black);
     border-radius: var(--radius-pill);
-  }
+  } */
   
   .hero-banner {
     position: relative;
@@ -543,6 +560,8 @@
     top: 180px;
     left: 0;
   }
+
+  
   
   /*--------------------- SERVICE -----------------*/
   
@@ -575,7 +594,7 @@
   }
   
   .service-card .card-title {
-    font-family: "Satoshi", sans-serif !important;
+    /* font-family: "Satoshi", sans-serif !important; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -639,7 +658,7 @@
   
   .tab-content .section-text,
   .about-item:not(:last-child) { 
-    font-family: "Satoshi", sans-serif !important;
+    /* font-family: "Satoshi", sans-serif !important; */
     font-size: 2rem;
     margin-block-end: 10px; 
     text-align: justify;
@@ -676,7 +695,7 @@
   }
 
   .soft-skills {
-    font-family: "Satoshi", sans-serif !important;
+   /*  font-family: "Satoshi", sans-serif !important; */
     font-size: 3rem !important;
     list-style-type: none;
     padding: 0;
@@ -686,8 +705,8 @@
  .soft-skill {
     display: flex;
     align-items: center;
-    font-family: "Satoshi", sans-serif !important;
-    font-size: 1.9rem !important;
+/*     font-family: "Satoshi", sans-serif !important;
+ */    font-size: 1.9rem !important;
     list-style: none;
     margin: 20px;
   }
@@ -704,7 +723,7 @@
   }
   
   .skill-wrapper .span {
-    font-family: "Satoshi", sans-serif !important;
+    /* font-family: "Satoshi", sans-serif !important; */
     font-weight: var(--weight-medium);
   }
 
@@ -737,22 +756,21 @@
   }
 
   .tech img {
-    width: 64px;
+    width: 50px;
     max-height: 70px;
   }
 
   .tooltip {
-    font-family: "Satoshi", "sans-serif" !important;
+    /* font-family: "Satoshi", "sans-serif" !important; */
     position: relative;
     padding: 1.2em;
   }
 
   .tooltip .tooltiptext {
-    font-family: "Satoshi", "sans-serif" !important;
-    visibility: hidden;
-    width: 120px;
+/*     font-family: "Satoshi", "sans-serif" !important; */ visibility: hidden;
+    width: 100px;
     background-color: #832161;
-    color: #333333;
+    color: #0C0F0A;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
@@ -766,8 +784,8 @@
   }
   
   .tooltip .tooltiptext::after {
-    font-family: "Satoshi", "sans-serif" !important;
-    content: "";
+/*     font-family: "Satoshi", "sans-serif" !important;
+ */    content: "";
     position: absolute;
     bottom: 100%;
     left: 50%;
@@ -778,8 +796,8 @@
   }
   
   .tooltip:hover .tooltiptext {
-    font-family: "Satoshi", "sans-serif" !important;
-    visibility: visible;
+/*     font-family: "Satoshi", "sans-serif" !important;
+ */    visibility: visible;
     opacity: 1;
   }
 
@@ -848,8 +866,8 @@
   }
   
   .project-card .card-subtitle {
-    font-family: Satoshi, sans-serif;
-    font-size: 1em;
+/*     font-family: Satoshi, sans-serif;
+ */    font-size: 1em;
     letter-spacing: 2px;
     margin-block-end: 10px;
     text-align: center;
@@ -908,18 +926,19 @@
   }
 
   .contact-form .input-field {
-    font-family: "Satoshi", sans-serif !important;
+    font-family: 'Lato', sans-serif;
     height: 50px;
     padding: 12px;
     margin: 20px;
-    color: var(--bg-white);
+    color: #0C0F0A;
     outline: none;
     border-block-end: 1px solid #7A5980;
     transition: border-color var(--transition-1);
   }
   
   .contact-form .input-field::placeholder { 
-    color: var(--text-light-gray); 
+    color: #0C0F0A; 
+
   }
   
   .contact-form .input-field:focus { 
@@ -928,7 +947,7 @@
   
   textarea.input-field {
     min-height: 165px;
-    resize: none;
+    
   }
   
   .contact-form .btn { 
@@ -973,8 +992,8 @@
     align-items: center;
     gap: 20px;
     flex-grow: 1;
-    font-family: "Satoshi", sans-serif !important;
-    color: var(--bg-white);
+/*     font-family: "Satoshi", sans-serif !important;
+ */    color: var(--bg-white);
     font-weight: bold;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -982,8 +1001,8 @@
   
    .copyright {
     flex-grow: 1;
-    font-family: "Satoshi", sans-serif !important;
-    color: var(--bg-white);
+/*     font-family: "Satoshi", sans-serif !important;
+ */    color: var(--bg-white);
     font-weight: bold;
   } 
   
