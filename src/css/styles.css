@@ -759,20 +759,18 @@
   }
 
   .tech img {
-    width: 50px;
-    max-height: 70px;
+    width: 100%;
+    max-height: auto;
   }
 
   .tooltip {
-    /* font-family: "Satoshi", "sans-serif" !important; */
     position: relative;
-    padding: 1.2em;
+    padding: .5em;
   }
 
   .tooltip .tooltiptext {
-/*     font-family: "Satoshi", "sans-serif" !important; */ 
     font-weight: 700;
-    visibility: hidden;
+    visibility: hidden; 
     background-color: #FAFFF4;
     color: #030301;
     text-align: center;
@@ -782,7 +780,7 @@
     z-index: 1;
     top: 100%;
     left: 50%;
-    margin-left: -60px;
+    margin-left: -30px;
     opacity: 0;
     transition: opacity 0.5s;
   }
@@ -933,7 +931,7 @@
     font-family: 'Lato', sans-serif;
     height: 50px;
     padding: 12px;
-    margin: 20px;
+    margin: 15px;
     color: #0C0F0A;
     outline: none;
     border-block-end: 1px solid #7A5980;
@@ -946,7 +944,7 @@
   }
   
   .contact-form .input-field:focus { 
-    border-color: var(--border-light-gray); 
+    border-color: #030301; 
   }
   
   textarea.input-field {
@@ -980,8 +978,11 @@
     height: 7%;
     margin-right: 30px;
   }
-  .contact-item .title { 
+  .contact-item .item { 
     color: #030301; 
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 0px 0px 1px #FAFFF4;
   }
 
  
@@ -996,8 +997,7 @@
     align-items: center;
     gap: 20px;
     flex-grow: 1;
-/*     font-family: "Satoshi", sans-serif !important;
- */    color: var(--bg-white);
+    color: var(--bg-white);
     font-weight: bold;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -1005,8 +1005,7 @@
   
    .copyright {
     flex-grow: 1;
-/*     font-family: "Satoshi", sans-serif !important;
- */    color: var(--bg-white);
+    color: var(--bg-white);
     font-weight: bold;
   } 
   
