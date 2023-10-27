@@ -120,7 +120,7 @@
   
   body {
     background: rgb(26,15,34);
-    background: linear-gradient(90deg, rgba(26,15,34,1) 10%, rgba(32,15,45,1) 20%, rgba(88,18,146,1) 100%);
+    background: linear-gradient(90deg, rgba(26,15,34,1) 0%, rgba(32,15,45,1) 30%, rgba(88,18,146,1) 100%);
     color: var(--bg-white);
     font-family: Lato, sans-serif;
     font-size: var(--fontSize-8);  
@@ -226,11 +226,18 @@
   }
   
   .title {
-    color: var(--bg-orange);
+    /* color: var(--bg-orange);  */
     font-family: 'Lato', sans-serif !important;
-    font-weight: var(--weight-regular);
+    font-weight: 600;
     font-size: var(--fontSize-2); 
-    text-shadow: 1px 2px 4px #0C0F0A;
+    /* text-shadow: 0px 1px 2px #FFF;  */
+    /* background-color:  rgb(255,174,3);
+    background-image:  linear-gradient(90deg, rgba(255,174,3,1) 0%, rgba(239,148,117,1) 50%, rgba(176,26,187,1) 100%); */
+    background-color: rgb(255,175,0);
+    background-image: linear-gradient(90deg, rgba(255,209,0,1) 0%, rgba(219,24,211,1) 70%, rgba(196,38,195,1) 100%);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent;
   }
   
   .h1 {
@@ -634,7 +641,8 @@
   }
   
   .tab-btn:is(:hover, :focus-visible, .active) { 
-    background: var(--bg-plum);
+    background: #D18FDF;
+    color: var(--bg-night)
   }
   
   .tab-content {
