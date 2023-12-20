@@ -2,9 +2,6 @@
 
 
 :root {
-
-    
-
     --bg-white: #FDFDFD;
     --bg-lime: #C8FF00;
     --bg-night: #0A090C;
@@ -38,7 +35,7 @@
     --fontSize-1: 4.6rem;
     --fontSize-2: 4.5rem;
     --fontSize-3: 4rem;
-    --fontSize-4: 3rem;
+    --fontSize-4: 2.5rem;
     --fontSize-5: 2.4rem;
     --fontSize-6: 2rem;
     --fontSize-7: 2rem;
@@ -88,8 +85,9 @@
   }
   
   img { 
-    height: auto; 
-  }
+    max-width: 100%;
+    /* height: auto;  */
+  } 
 
   .logo_PA {
     width: 40%;
@@ -822,6 +820,8 @@
     margin-block-start: 30px;
   }
   
+
+
   /*----------------- PROJECT ------------------*/
   
   .project-card .card-banner::before {
@@ -855,12 +855,13 @@
   }
   
   .project-card .card-content { 
-    padding: 24px 30px 0; 
+    padding: 15px 20px 0; 
+
   }
   
   .project-card .card-subtitle {
     font-size: 1em;
-    letter-spacing: 2px;
+    letter-spacing: 1.8px;
     margin-block-end: 10px;
     text-align: center;
   }
@@ -880,7 +881,7 @@
 
   .slider-list {
     display: flex;
-    align-items: flex-start;
+/*  align-items: flex-start; */    
     gap: 20px;
     overflow: auto;
     scroll-snap-type: inline mandatory;
@@ -892,6 +893,8 @@
   }
   
   .slider-item {
+    border: 2px solid gray;
+    border-radius: 5px;
     min-width: 100%;
     scroll-snap-align: start;
   }
@@ -904,6 +907,22 @@
   .profile-card .card-subtitle { 
     font-size: var(--fontSize-10); 
   }
+
+  .buttons-techs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 7px;
+  }
+
+  .button-tech {
+    background: #d18fdf;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-weight: bold;
+  }
+
+  
 
   
   /*--------------------- CONTACT --------------------*/
