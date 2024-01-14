@@ -39,18 +39,10 @@
                     </button>
                 </div>    
                 <ul class="navbar-list ">  
-                    <li>
-                        <a href="#home" class="navbar-link" data-nav-link>HOME</a>
-                    </li>
-                    <li>
-                        <a href="#about" class="navbar-link" data-nav-link>ABOUT ME</a>
-                    </li>
-                    <li>
-                        <a href="#project" class="navbar-link" data-nav-link>PROJECTS</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="navbar-link" data-nav-link>CONTACT</a>
-                    </li>
+                    <li><a href="#home" class="navbar-link" data-nav-link>HOME</a></li>
+                    <li><a href="#about" class="navbar-link" data-nav-link>ABOUT ME</a></li>
+                    <li><a href="#project" class="navbar-link" data-nav-link>PROJECTS</a></li>
+                    <li><a href="#contact" class="navbar-link" data-nav-link>CONTACT</a></li>
                 </ul>
             </nav>
             <button class="nav-open-btn btn:hover" aria-label="open menu" data-nav-toggler>
@@ -67,19 +59,29 @@
             <!---------------------HERO ------------------------>
                 <div class="hero text-center" id="home">
                     <div id="container-home" >  
+
                         <div class="banner-outline has-after">
-                            <div class="hero-banner img-holder has-after" style="--width: 500; --height: 380;" data-tilt> <!-- height: 680; -->
-                                <img src="./src/img/foto_paula_perfil_work1.png"  width="320" height="400" alt="Paula Armengol" class="img-cover"> <!-- width="500" height="680" -->
+                            <div class="hero-banner img-holder has-after" style="width: 400; height: 280;" data-tilt> 
+                                <img src="./src/img/foto_paula_perfil_work1.png"  width="320" height="400" alt="Paula Armengol" class="img-cover"> 
                             </div>
                             <span class="span title1">Paula Armengol</span>
                         </div>
+
                         <div class="hero-content">
                             <h1 class="h1 title">Frontend Developer</h1>
-                            <div class="wrapper">
+                    
+                            <div class="links-contact">
+                                <a href="https://www.linkedin.com/in/paula-armengol/" class="" target="_blank"><img src="./src/img/linkedin-svgrepo-com.svg" style="width: 42px;"></a>
+                                <a href="https://github.com/PauArmengol" class="" target="_blank"><img src="./src/img/github-142-svgrepo-com (1).svg" style="width: 32px;"></a>
+                               <!--  <a href="" class="" target="_blank"><img src="./src/img/dribbble-171-svgrepo-com.svg" style="width: 32px;"></a> -->
+
+                            </div>
+
+                            <!-- <div class="wrapper">
                                 <a href="#contact" class="btn btn:hover">
                                     <span class="span">Acá me podés encontrar</span>
                                 </a>
-                            </div>  
+                            </div>  --> 
                         </div>
                     
                             <img src="./src/img/hero-shape-1.png" width="300" height="500" alt="shape" class="shape shape-1">
@@ -121,7 +123,7 @@
 
                                     <p class="section-text">
                                         
-                                        Hola! Soy Paula, desarrolladora frontend de Buenos Aires, Argentina.
+                                        Hola! Soy Paula, desarrolladora frontend de Buenos Aires, Argentina. <br>
                                         En mi portfolio vas a encontrar diversos proyectos, desde prácticas finales de los cursos de formación como developer hasta trabajos freelance
                                         desarrollados recientemente según los estándares de la industria.
                                         <br />
@@ -204,10 +206,10 @@
                                                 <img src="./src/img/reactlogo2.png" alt="React" />
                                                 <span class="tooltiptext">React</span>
                                             </div>
-                                            <div class="tech tooltip">
+                                            <!-- <div class="tech tooltip">
                                                 <img src="./src/img/svelte.svg" alt="Svelte" />
                                                 <span class="tooltiptext">Svelte</span>
-                                            </div>
+                                            </div> -->
                                             <div class="tech tooltip">
                                                 <img src="./src/img/nextjs.png" alt="NextJs" />
                                                 <span class="tooltiptext">NextJs</span>
@@ -485,14 +487,14 @@
                             <div class="project-card text-center">
                                 <div class="card-banner img-holder has-before" >
                                     <img src="#"  loading="lazy" alt="Project" class="img-cover">
-                                    <a href="#" class="btn btn:hover" target="_blank">
+                                    <a href="https://ecommerce-nextjs-eight-pearl.vercel.app/" class="btn btn:hover" target="_blank">
                                     <span class="span">Ver Sitio</span>
                                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                     </a>
                                 </div>
                                 <div class="card-content">
                                     <h3 class="title h3">
-                                    <a href="#" class="card-title" target="_blank">Proyecto 6</a>
+                                    <a href="https://ecommerce-nextjs-eight-pearl.vercel.app/" class="card-title" target="_blank">Proyecto 6</a>
                                     </h3>
                                 </div>
                                 <div class="card-content">
@@ -589,25 +591,25 @@
                             <ul class="contact-list">
                                 <li class="contact-item">
                                     <div class="contact-item-it">
-                                        <img src="./src/img/whatsapp (8).png" alt="whatsapp" id="whatsapp">  
-                                        <span class="item">(+54) 9 1135941434</span>      
+                                        <img src="./src/img/whatsapp-128-svgrepo-com.svg" alt="whatsapp" style="width: 32px; margin-right: 15px;" >  
+                                        <span class="item">(+54) 1135941434</span>      
                                     </div>
                                 </li>
                                 <li class="contact-item">
                                     <div class="contact-item-it">        
-                                        <img src="./src/img/linkedin.png" alt="linkedin" id="linkedin">
+                                        <img src="./src/img/linkedin-round-svgrepo-com.svg" alt="linkedin" style="width: 32px; margin-right: 15px;">
                                         <span class="item">/in/paula-armengol/</span>   
                                     </div>
                                 </li>
                                 <li class="contact-item">
                                     <div class="contact-item-it">
-                                        <img src="./src/img/gmail (2).png" alt="Gmail" id="gmail">
+                                        <img src="./src/img/gmail-svgrepo-com.svg" alt="Gmail" style="width: 32px; margin-right: 15px;">
                                         <span class="item">paulaarmengoldev@gmail.com</span>
                                     </div>
                                 </li>
                                 <li class="contact-item">
                                     <div class="contact-item-it">
-                                        <img src="./src/img/github_blanco.png" alt="GitHub" id="github">
+                                        <img src="./src/img/github-142-svgrepo-com.svg" alt="GitHub" style="width: 32px; margin-right: 15px;">
                                         <span class="item">/PauArmengol</span>
                                     </div>
                                 </li>
@@ -621,7 +623,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p class="copyright">&copy; 2023  Developed with <img src="/src/img/purple_hearts/favicon-16x16.png"> by Paula Armengol - All rigths reserved </p>
+            <p class="copyright">&copy; 2023  Developed with <img src="/src/img/purple_hearts/favicon-16x16.png"> by Paula Armengol - All Rigths Reserved </p>
         </div>
     </footer>
 
